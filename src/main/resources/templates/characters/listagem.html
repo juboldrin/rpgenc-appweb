@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nx/thymeleaf/layout"
+      layout:decorate="~{template.html}"
+>
+<head>
+    <title>Lista de personagens</title>
+</head>
+<body>
+
+<div layout:fragment="conteudo">
+        <h1>
+            Lista de personagens
+        </h1>
+
+        <a href="/characters/formulario">Novo</a>
+
+        <a href="tela_character.html">Veja exemplos de personagens</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>NOME:</th>
+                    <th>HABILIDADE PRINCIPAL:</th>
+                    <th>HABILIDADE SECUNDÁRIA:</th>
+                </tr>
+            </thead>
+        </table>
+
+        <tbody>
+            <tr th:each="character : ${lista}">
+                <td th:text="${character.nome}"></td>
+                <td th:text="${character.habilidadePrincipal}"></td>
+                <td th:text="${character.habilidadeSecundaria}"></td>
+                <td>
+                    <a th:href="@{/characters/formulario?id={id}(id=${character.id})}">Editar</a>
+
+                    <form action="/characters" method="post">
+                        <input type="hidden" name="_method" value="delete">
+                        <input type="hidden" name="id" th:value="${character.id}">
+                        <input type="submit" value="Excluir">
+                    </form>
+                </td>
+
+            </tr>
+        </tbody>
+</div>
+</body>
+</html>
