@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escolha de Personagens</title>
+  <link rel="stylesheet" type="text/css" href="../../static/css/styleCharacterPage.css">
+</head>
+<body>
+<h1>Escolha seu personagem</h1>
+<div class="character-select">
+  <a href="#" class="character rogue" onclick="toggleDescription('rogue')">
+    <img src="../../static/img/rogue-pic.png" alt="Imagem do personagem Rogue">
+    <span class="name" onclick="toggleDescription('rogue')">Rogue</span>
+    <div class="description" id="description-rogue">
+      <p>
+      <p>Sinalizando para seus companheiros esperarem, uma
+        halfling esgueira-se à frente pelo corredor da masmorra.
+        Ela encosta seus ouvidos na porta, puxa suas ferramentas
+        e abre a fechadura em um piscar de olhos. Ela então
+        desaparece nas sombras, ao mesmo tempo em que seu
+        companheiro guerreiro se move para abrir a porta com
+        um chute.</p>
+      <p>Uma humana espreita nas sombras de um beco,
+        enquanto seu cúmplice se prepara para a parte dele na
+        emboscada. Quando seu alvo – um notório traficante de
+        escravos – passa pelo beco, seu cúmplice grita, o
+        traficante de escravos vem investigar e a lâmina da
+        assassina corta sua garganta antes mesmo dele ser capaz
+        de emitir qualquer som.</p>
+      <p>Disfarçando uma risadinha, uma gnoma agita seus
+        dedos e magicamente surrupia o molho de chaves do cinto
+        do guarda. No momento seguinte, as chaves estão em
+        suas mãos, a porta da cela está aberta e ela e seus
+        companheiros estão livres para escapar.</p>
+      <p>Ladinos contam com sua perícia, furtividade e as
+        vulnerabilidades de seus inimigos para obter vantagem
+        em qualquer situação. Eles possuem uma habilidade
+        especial para encontrar a solução para praticamente
+        qualquer problema, demonstrando desenvoltura e
+        versatilidade, a chave de qualquer grupo aventureiro de
+        sucesso.</p>
+      </p>
+    </div>
+  </a>
+  <a href="#" class="character fighter" onclick="toggleDescription('fighter')">
+    <img src="../../static/img/fighter-pic.png" alt="Imagem do personagem Fighter">
+    <span class="name" onclick="toggleDescription('fighter')">Fighter</span>
+    <div class="description" id="description-fighter">
+      <p>
+      <p>Um humano alto membro de alguma tribo caminha em
+        meio a uma nevasca, coberto por peles e empunhando seu
+        machado. Ele gargalha
+        à medida que avança em direção
+        do gigante do gelo que ousou caçar os alces que o seu povo
+        arrebanhava.</p>
+      <p>Uma meio-orc rosna para o último que ousou desafiar
+        sua autoridade sobre a tribo selvagem, pronta para
+        quebrar seu pescoço com suas mãos nuas da mesma
+        forma que ela fez com os outros seis rivais anteriores.
+        Espumando pela boca, um anão bate com seu elmo na
+        cara de um inimigo drow, depois dirige seu cotovelo
+        armadurado na direção do estomago de outro.</p>
+      <p>Esses bárbaros, diferentes da forma que conseguem,
+        são definidos por sua fúria: desenfreada, inextinguível e
+        irracional fúria. Mais que uma mera emoção, sua raiva é
+        a ferocidade de um predador acuado, o assalto implacável
+        de uma tempestade, a turbulência agitada do mar.</p>
+      <p>Para alguns, suas fúrias emerge da comunhão com
+        ferozes espíritos animais. Outras provem de um
+        reservatório turvo de raiva de um mundo cheio de dor.
+        Para cada bárbaro, a fúria é um poder que preenche não
+        apenas o frenesi de batalha, mas também reflexos,
+        resiliência e proezas de força incríveis.</p>
+      </p>
+    </div>
+  </a>
+  <a href="#" class="character cleric" onclick="toggleDescription('cleric')">
+    <img src="../../static/img/cleric-pic.png" alt="Imagem do personagem Cleric">
+    <span class="name" onclick="toggleDescription('cleric')">Cleric</span>
+    <div class="description" id="description-cleric">
+      <p>
+      <p>Os braços e olhos erguem-se na direção do sol e com uma
+        prece em seus lábios, um elfo começa a brilhar com luz
+        própria, que irradia para curar seus surrados
+        companheiros em batalha.</p>
+      <p>Com um cântico de batalha, um anão golpeia com seu
+        machado por todos os lados, abrindo caminho em meio às
+        linhas de orcs posicionadas contra ele, louvando os deuses
+        por cada inimigo derrubado.</p>
+      <p>Invocando maldições contra as forças de mortos-vivos,
+        um humano levanta seu símbolo sagrado enquanto a luz
+        divina brilha ao seu redor, banindo as criaturas que há
+        um momento atrás se amontoavam sobre seus
+        companheiros.</p>
+      <p>Clérigos são intermediadores entre o mundo mortal e o
+        distante plano dos deuses. Tão variados quanto os deuses
+        que servem, clérigos se esforçam para ser a própria mão
+        de seus deuses. Não é apenas um sacerdote comum, mas
+        alguém investido de poder divino.</p>
+      </p>
+    </div>
+  </a>
+  <a href="#" class="character wizard" onclick="toggleDescription('wizard')">
+    <img src="../../static/img/wizard-pic.png" alt="Imagem do personagem Wizard">
+    <span class="name" onclick="toggleDescription('wizard')">Wizard</span>
+    <div class="description" id="description-wizard">
+      <p>
+      <p>Vestida com uma túnica prata que denota seu posto,
+        uma elfa fecha seus olhos para distanciar
+        -se das
+        distrações do campo de batalha e entoa o seu canto
+        sereno. Dedos se agitam à sua frente, ela completa sua
+        magia e lança uma pequena centelha de fogo em direção dos inimigos,
+        explodindo em chamas o incêndio que engolfa os soldados.</p>
+      <p>Verificando mais de uma vez o seu trabalho, um
+        humano inscreve um círculo mágico com giz no chão de
+        pedra, então espalha pó de ferro ao longo de cada linha e
+        curva graciosas. Quando o círculo está completo, ele
+        murmura um longo encantamento. Um buraco se abre no
+        espaço dentro do círculo, trazendo um cheiro de enxofre
+        de outro plano bem distante.</p>
+      <p>Agachado no chão em um cruzamento da masmorra,
+        um gnomo joga um punhado de pequenos ossos com
+        símbolos místicos escritos, murmurando algumas
+        palavras de poder sobre eles. Ele fecha os olhos para
+        receber as visões mais claramente, acena com a cabeça
+        lentamente, então abre os olhos e aponta para baixo,
+        indicando a passagem à sua esquerda.</p>
+      <p>Os magos são usuários de magia soberanos, unidos e
+        definidos como uma classe pelas magias que conjuram.</p>
+      <p>Usufruindo de uma trama sutil de magia que permeia o
+        cosmos, os magos conjuram magias explosivas de fogo,
+        arcos de relâmpagos, enganos sutis e controle de mentes
+        de força bruta. Sua magia invoca monstros de outros
+        planos de existência, vislumbra o futuro ou transforma
+        inimigos mortos em zumbis. Suas magias mais poderosas
+        podem transformar uma substância em outra, evocar
+        meteoros que caem do céu ou abrir portais para outros
+        mundos.</p>
+      </p>
+    </div>
+  </a>
+  <a href="#" class="character ranger" onclick="toggleDescription('ranger')">
+    <img src="../../static/img/ranger-pic.png" alt="Imagem do personagem Ranger">
+    <span class="name" onclick="toggleDescription('ranger')">Ranger</span>
+    <div class="description" id="description-ranger">
+      <p>
+      <p>De aparência áspera e selvagem, um humano espreita sozinho através das
+        sombras das árvores, caçando os orcs que ele sabe estarem planejando um
+        assalto a uma fazenda próxima.</p>
+      <p>Segurando uma espada curta em cada mão, ele se transforma em um vendaval
+        de aço, talando um inimigo após o outro.</p>
+      <p>Após se evadir de um cone de ar congelante, uma elfa encontra -se de pé e
+        saca seu arco das costas, disparando uma flecha no dragão branco. Ignorando a
+        onda de medo que emana do dragão, assim como ignorou o frio do seu sopro,
+        ela envia uma flecha após a outro tentando encontrar as brechas entre
+        as espessas escamas do dragão.</p>
+      <p>Erguendo sua mão para o alto, um meio-elfo assobia para o falcão que o
+        circunda acima, chamando o pássaro de volta para o seu lado. </p>
+      <p>Sussurrando instruções em Élfico, ele aponta para o urso-coruja que ele estava
+        rastreando e envia o falcão para distrair a criatura enquanto
+        ele prepara seu arco.</p>
+      <p>Longe do alvoroço das cidades e vilas, passando das divisas que
+        abrigam a fazendas mais longínquas dos horrores do ermo,
+        entre as árvores densas de florestas sem trilhas e através
+        das vastas planícies vazias, os patrulheiros mantem
+        sua vigília interminável.</p>
+      </p>
+    </div>
+  </a>
+</div>
+<script src="../../static/js/scriptCharacterPage.js"></script>
+</body>
+</html>
